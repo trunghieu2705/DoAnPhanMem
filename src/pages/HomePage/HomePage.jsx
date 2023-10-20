@@ -13,7 +13,7 @@ const HomePage = () => {
     const arr = ['TV', 'Tu lanh', 'Lap top']
     return (
         <>
-        <div style={{padding: '0 120px'}}>
+        <div style={{ width: '1270px', margin: '0 auto'}}>
             <WrapperTypeProduct>
             {arr.map((item) => {
                 return (
@@ -22,7 +22,8 @@ const HomePage = () => {
             })}
             </WrapperTypeProduct>
         </div>
-        <div id="container" style={{backgroundColor: '#efefef', padding: '0 120px', height: '1000px', width: '100%'}}>
+        <div className='body' style={{width: '100%',backgroundColor: '#efefef' }}>
+             <div id="container" style={{height: '1000px', width: '1270px', margin: '0 auto'}}>
                  <SliderComponent arrImages={[slider1,slider2,slider3]}/>
                  <WrapperProducts>
                     <CardComponent />
@@ -43,6 +44,7 @@ const HomePage = () => {
                  </div>
 
             </div>
+        </div>
         </>
     )
 }
